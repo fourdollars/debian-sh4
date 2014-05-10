@@ -1,0 +1,8 @@
+Origin: Debian
+Label: Debian
+Suite: stable
+Codename: wheezy
+Version: 6.0
+Architectures: source sh4
+Components: main non-free contrib
+Description: FourDollars Debian Archive for wheezy/sh4
