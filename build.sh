@@ -16,15 +16,17 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-for i in /var/lib/lxc/wheezy-sh4/rootfs/root/*.deb; do
+ROOTFS='/var/lib/lxc/wheezy-sh4/rootfs'
+
+for i in $ROOTFS/root/*.deb; do
     reprepro -Vb . includedeb wheezy $i
 done
 
-for i in /var/lib/lxc/wheezy-sh4/rootfs/root/*.dsc; do
+for i in $ROOTFS/root/*.dsc; do
     reprepro -Vb . includedsc wheezy $i
 done
 
-#for i in /var/lib/lxc/wheezy-sh4/rootfs/root/*.changes; do
+#for i in $ROOTFS/root/*.changes; do
 #    reprepro -Vb . include wheezy $i
 #done
 

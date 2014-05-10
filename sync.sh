@@ -16,7 +16,9 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-rsync -Cavz pool lot:/home/fourdollars/public_html/debian
-rsync -Cavz dists lot:/home/fourdollars/public_html/debian
+REMOTE='lot:/home/fourdollars/public_html'
+
+rsync -Cavz pool $REMOTE/debian
+rsync -Cavz dists $REMOTE/debian
 
 # vim:fileencodings=utf-8:expandtab:tabstop=4:shiftwidth=4:softtabstop=4
